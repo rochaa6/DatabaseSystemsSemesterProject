@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+<style>
+    body{
+        text-align: center;
+        margin: 50px;
+    }
+    
+    .login-pg{
+       border: 5px solid grey; 
+       text-align:center; 
+       padding: 10px;
+    }
+    
+    a{
+    font-size: 25px;
+    text-decoration: none;
+    Color: black;
+    Padding: 0.1em;
+    background-color: lightgrey;        
+    border: 5px solid grey;
+    border-radius: 50px;
+    }
+    a:hover{
+    background-color: grey;
+    color: white;
+    }
+        
+    h1{
+    background-color: #CFCFCF; 
+    border: 5px solid grey; 
+    text-align:center;
+    margin: 50px;
+    font-size: 50px;
+    }
+    button {
+          border:5px solid grey;
+          padding: 10px 27px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          text-align: center;
+          border-radius: 50px;
+        }
+        
+    button:hover{
+        cursor: pointer;
+        background-color: grey;
+        color: white;
+    }
+    
+</style>
+
+</head>
+    <body>
+        <div class= login-pg>
+            <h1> Admin Page </h1>
+            <div class = "btn">
+                <a href="admin_order_assign_page.php"> order assign</a>
+            </div>
+            <br>
+            <br>
+            <div class = "btn">
+                <a href="admin_employee_status_page.php"> customer to employee</a>
+            </div>
+            <br>
+            <br>
+            <div class="login-btn">
+                <button class = "loginbtn" type="button" onclick="document.location='logout.php'">Logout</button>
+            </div>
+        
+        </div>
+    
+    </body>
+    
+    
+</html>
