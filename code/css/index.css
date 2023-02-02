@@ -1,1 +1,224 @@
+@import 'category.css';
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* navigation section */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto',sans-serif;
+}
+
+.nav-bar{
+    top: 0;
+    left: 0;
+    width: auto;
+    background-color: white;
+}
+
+.nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-image{
+    height: 80px;
+
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.nav-items a{
+    margin-left: 20px;
+
+} 
+
+.nav-items img{
+   width: 30px;
+}
+
+.cart{
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    margin: 5px 10px 5px 10px;
+}
+.cart img{
+    width: 30px;
+
+}
+
+/* logout section */
+.logout{
+    position: relative;
+}
+
+.logoutbtn{
+    border: none;
+    color: #383838;;
+    padding: 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logoutbtn:hover{
+    opacity: 1;
+    background-color: #B7B7B7;
+    text-decoration: white;
+}
+
+.cart ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.cat-list{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: left;
+    list-style: none;
+    background-color: #d1d1d1;
+
+}
+.link{ 
+    text-transform: capitalize;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.5;
+    
+}
+
+.link:hover{
+    opacity: 1;
+    background-color: #B7B7B7;
+}
+
+#home-item{
+    background-color: #ABABAB;
+
+} 
+
+@media screen and (max-width: 600px) {
+    .cat-list a:not(:first-child) {display: none;}
+    .cat-list a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .cat-list.responsive {position: relative;}
+    .cat-list.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .cat-list.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+/* header section */
+.hero-section{
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/background.jpeg);
+    background-size: cover;
+    background-size: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.text {
+    background-color: white;
+    color: black;
+    font-size: 10vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    padding: 10px;
+    width: 80%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+    
+  }
+
+
+/* account section */
+
+.account-page{
+    padding: 50px 0;
+    justify-content: relative;
+}
+
+.form-continer{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+/* footer section  */
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+footer{
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #ABABAB;
+}
+
+.footer-container{
+    display: flex;
+}
+
+.logo{
+    height: 75px;
+}
 
